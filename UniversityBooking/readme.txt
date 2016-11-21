@@ -10,3 +10,4 @@
 7. enabled migrations, 
 7. Run seed with migrations
 8. Serverside Data Validation for models and formatting
+9. Assignable ID's', like unique course ID's
