@@ -26,6 +26,7 @@ namespace UniversityBooking.DAL
                 .Map(t => t.MapLeftKey("CourseID")
                     .MapRightKey("InstructorID")
                     .ToTable("CourseInstructor"));
+            modelBuilder.Entity<Department>().MapToStoredProcedures();
         }
     }
 }
