@@ -7,4 +7,6 @@
 4. created views that display information from multiple tables
 5. added sorting and search box for the data
 6. added page numbering on the footer
-7. enabled migrations
+7. enabled migrations, 
+7. Run seed with migrations
+8. Serverside Data Validation for models and formatting

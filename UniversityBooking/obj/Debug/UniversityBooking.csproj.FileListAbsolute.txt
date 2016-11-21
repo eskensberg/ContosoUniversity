@@ -128,3 +128,6 @@ C:\Users\eskensberg\Desktop\Online Scripts\ASP.NET MVC 5\UniversityBookingGitHub
 C:\Users\eskensberg\Desktop\Online Scripts\ASP.NET MVC 5\UniversityBookingGitHub\UniversityBooking\obj\Debug\UniversityBooking.pdb
 C:\Users\eskensberg\Desktop\Online Scripts\ASP.NET MVC 5\UniversityBookingGitHub\UniversityBooking\obj\Debug\UniversityBooking.Migrations.InitialCreate.resources
 C:\Users\eskensberg\Desktop\Online Scripts\ASP.NET MVC 5\UniversityBookingGitHub\UniversityBooking\obj\Debug\UniversityBooking.csproj.GenerateResource.Cache
+C:\Users\eskensberg\Desktop\Online Scripts\ASP.NET MVC 5\UniversityBookingGitHub\UniversityBooking\obj\Debug\UniversityBooking.Migrations.MaxLengthOnNames.resources
+C:\Users\eskensberg\Desktop\Online Scripts\ASP.NET MVC 5\UniversityBookingGitHub\UniversityBooking\obj\Debug\UniversityBooking.Migrations.ColumnFirstName.resources
+C:\Users\eskensberg\Desktop\Online Scripts\ASP.NET MVC 5\UniversityBookingGitHub\UniversityBooking\obj\Debug\UniversityBooking.Migrations.ComplexDataModel.resources
