@@ -211,8 +211,13 @@
     <Compile Include="Migrations\201611231037208_identityrewired.Designer.cs">
       <DependentUpon>201611231037208_identityrewired.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201611231748068_NewTable.cs" />
+    <Compile Include="Migrations\201611231748068_NewTable.Designer.cs">
+      <DependentUpon>201611231748068_NewTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\BookingRecord.cs" />
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\Department.cs" />
     <Compile Include="Models\Enrollment.cs" />
@@ -220,6 +225,8 @@
     <Compile Include="Models\Instructor.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\OfficeAssignment.cs" />
+    <Compile Include="Models\RoomBooking.cs" />
+    <Compile Include="Models\RoomLocations.cs" />
     <Compile Include="Models\student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -349,6 +356,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201611231037208_identityrewired.resx">
       <DependentUpon>201611231037208_identityrewired.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611231748068_NewTable.resx">
+      <DependentUpon>201611231748068_NewTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

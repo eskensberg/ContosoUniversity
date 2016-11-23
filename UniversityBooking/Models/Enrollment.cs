@@ -13,6 +13,7 @@ namespace UniversityBooking.Models
 
     public class Enrollment
     {
+        [Key]
         public int EnrollmentID { get; set; }
         public int CourseID { get; set; }
         public int StudentID { get; set; }
