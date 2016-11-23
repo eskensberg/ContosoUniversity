@@ -133,3 +133,4 @@ C:\Users\eskensberg\Desktop\Online Scripts\ASP.NET MVC 5\UniversityBookingGitHub
 C:\Users\eskensberg\Desktop\Online Scripts\ASP.NET MVC 5\UniversityBookingGitHub\UniversityBooking\obj\Debug\UniversityBooking.Migrations.ComplexDataModel.resources
 C:\Users\eskensberg\Desktop\Online Scripts\ASP.NET MVC 5\UniversityBookingGitHub\UniversityBooking\obj\Debug\UniversityBooking.Migrations.DepartmentSP.resources
 C:\Users\eskensberg\Desktop\Online Scripts\ASP.NET MVC 5\UniversityBookingGitHub\UniversityBooking\obj\Debug\UniversityBooking.Migrations.RowVersion.resources
+C:\Users\eskensberg\Desktop\Online Scripts\ASP.NET MVC 5\UniversityBookingGitHub\UniversityBooking\obj\Debug\UniversityBooking.Migrations.identityrewired.resources

@@ -207,6 +207,10 @@
     <Compile Include="Migrations\201611211519547_RowVersion.Designer.cs">
       <DependentUpon>201611211519547_RowVersion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201611231037208_identityrewired.cs" />
+    <Compile Include="Migrations\201611231037208_identityrewired.Designer.cs">
+      <DependentUpon>201611231037208_identityrewired.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Course.cs" />
@@ -342,6 +346,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201611211519547_RowVersion.resx">
       <DependentUpon>201611211519547_RowVersion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611231037208_identityrewired.resx">
+      <DependentUpon>201611231037208_identityrewired.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

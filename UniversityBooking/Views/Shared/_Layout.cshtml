@@ -23,16 +23,25 @@
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("EpiServer", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Students", "Index","Student")</li>
-                    <li>@Html.ActionLink("Courses", "Index","Course")</li>
-                    <li>@Html.ActionLink("Instructors", "Index","Instructor")</li>
+                    <li>@Html.ActionLink("Students", "Index", "Student")</li>
+                    <li>@Html.ActionLink("Courses", "Index", "Course")</li>
+                    <li>@Html.ActionLink("Instructors", "Index", "Instructor")</li>
                     <li>@Html.ActionLink("Departments", "Index", "Department")</li>
                     <li>@Html.ActionLink("C#", "Index", "Home")</li>
+                
+                </ul>
+                <ul class="nav navbar-nav">
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search" />
+                        </div>
+                    </form>
                     <li>@Html.ActionLink("Linq", "Index", "Home")</li>
                     <li>@Html.ActionLink("Booking_System", "Index", "Home")</li>
                     <li>@Html.ActionLink("Bank", "Index", "Home")</li>
                     <li>@Html.ActionLink("Forum", "Index", "Home")</li>
                 </ul>
+
                 @Html.Partial("_LoginPartial")
             </div>
         </div>
