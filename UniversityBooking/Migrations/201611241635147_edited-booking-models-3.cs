@@ -3,7 +3,7 @@ namespace UniversityBooking.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class editedbookingmodels2 : DbMigration
+    public partial class editedbookingmodels3 : DbMigration
     {
         public override void Up()
         {
@@ -26,19 +26,20 @@ namespace UniversityBooking.Migrations
                     {
                         RoomId = c.Int(nullable: false, identity: true),
                         RoomName = c.String(),
+                        RoomLocation_LocationId = c.Int(),
                     })
-                .PrimaryKey(t => t.RoomId);
+                .PrimaryKey(t => t.RoomId)
+                .ForeignKey("dbo.RoomLocations", t => t.RoomLocation_LocationId)
+                .Index(t => t.RoomLocation_LocationId);
             
             CreateTable(
                 "dbo.RoomLocations",
                 c => new
                     {
-                        LocationId = c.Int(nullable: false),
+                        LocationId = c.Int(nullable: false, identity: true),
                         OfficeLocation = c.String(maxLength: 50),
                     })
-                .PrimaryKey(t => t.LocationId)
-                .ForeignKey("dbo.Rooms", t => t.LocationId)
-                .Index(t => t.LocationId);
+                .PrimaryKey(t => t.LocationId);
             
             CreateTable(
                 "dbo.Courses",
@@ -153,7 +154,7 @@ namespace UniversityBooking.Migrations
             DropForeignKey("dbo.OfficeAssignments", "InstructorID", "dbo.Instructors");
             DropForeignKey("dbo.InstructorCourses", "Course_CourseID", "dbo.Courses");
             DropForeignKey("dbo.InstructorCourses", "Instructor_ID", "dbo.Instructors");
-            DropForeignKey("dbo.RoomLocations", "LocationId", "dbo.Rooms");
+            DropForeignKey("dbo.Rooms", "RoomLocation_LocationId", "dbo.RoomLocations");
             DropForeignKey("dbo.RoomBookingRecords", "BookingRecord_BookingId", "dbo.BookingRecords");
             DropForeignKey("dbo.RoomBookingRecords", "Room_RoomId", "dbo.Rooms");
             DropIndex("dbo.InstructorCourses", new[] { "Course_CourseID" });
@@ -165,7 +166,7 @@ namespace UniversityBooking.Migrations
             DropIndex("dbo.OfficeAssignments", new[] { "InstructorID" });
             DropIndex("dbo.Departments", new[] { "InstructorID" });
             DropIndex("dbo.Courses", new[] { "DepartmentID" });
-            DropIndex("dbo.RoomLocations", new[] { "LocationId" });
+            DropIndex("dbo.Rooms", new[] { "RoomLocation_LocationId" });
             DropTable("dbo.InstructorCourses");
             DropTable("dbo.RoomBookingRecords");
             DropTable("dbo.Students");

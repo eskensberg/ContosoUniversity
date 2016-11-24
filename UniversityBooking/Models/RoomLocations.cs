@@ -9,15 +9,16 @@ namespace UniversityBooking.Models
 {
     public class RoomLocations
     {
+        //[ForeignKey("Room")]
         [Key]
-        [ForeignKey("Room")]
         public int LocationId { get; set; }
 
         [StringLength(50)]
         [Display(Name = "Office Location")]
         public string OfficeLocation { get; set; }
    
-        public virtual Room Room { get; set; }
+        public virtual ICollection<Room> Rooms { get; set; }
+
 
     }
 }

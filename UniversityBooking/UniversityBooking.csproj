@@ -177,15 +177,16 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InstructorController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\RoomsController.cs" />
     <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="DAL\SchoolContext.cs" />
     <Compile Include="DAL\SchoolInitializer.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201611241554386_edited-booking-models-2.cs" />
-    <Compile Include="Migrations\201611241554386_edited-booking-models-2.Designer.cs">
-      <DependentUpon>201611241554386_edited-booking-models-2.cs</DependentUpon>
+    <Compile Include="Migrations\201611241635147_edited-booking-models-3.cs" />
+    <Compile Include="Migrations\201611241635147_edited-booking-models-3.Designer.cs">
+      <DependentUpon>201611241635147_edited-booking-models-3.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -299,6 +300,11 @@
     <Content Include="Views\Department\Details.cshtml" />
     <Content Include="Views\Department\Edit.cshtml" />
     <Content Include="Views\Department\Index.cshtml" />
+    <Content Include="Views\Rooms\Create.cshtml" />
+    <Content Include="Views\Rooms\Delete.cshtml" />
+    <Content Include="Views\Rooms\Details.cshtml" />
+    <Content Include="Views\Rooms\Edit.cshtml" />
+    <Content Include="Views\Rooms\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -308,8 +314,8 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201611241554386_edited-booking-models-2.resx">
-      <DependentUpon>201611241554386_edited-booking-models-2.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201611241635147_edited-booking-models-3.resx">
+      <DependentUpon>201611241635147_edited-booking-models-3.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

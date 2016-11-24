@@ -7,13 +7,13 @@ namespace UniversityBooking.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class editedbookingmodels2 : IMigrationMetadata
+    public sealed partial class editedbookingmodels3 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(editedbookingmodels2));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(editedbookingmodels3));
         
         string IMigrationMetadata.Id
         {
-            get { return "201611241554386_edited-booking-models-2"; }
+            get { return "201611241635147_edited-booking-models-3"; }
         }
         
         string IMigrationMetadata.Source

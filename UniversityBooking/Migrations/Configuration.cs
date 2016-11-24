@@ -17,6 +17,29 @@ namespace UniversityBooking.Migrations
 
         protected override void Seed(SchoolContext context)
         {
+            var RoomLocations = new List<RoomLocations>
+            {
+                new RoomLocations { LocationId = 1,   OfficeLocation = "Manchester"},
+                new RoomLocations { LocationId = 2,   OfficeLocation = "Liverpool"},
+                new RoomLocations { LocationId = 3,   OfficeLocation = "London"},
+                new RoomLocations { LocationId = 3,   OfficeLocation = "Chicago"},
+                new RoomLocations { LocationId = 5,   OfficeLocation = "Dubai"}
+            };
+
+            RoomLocations.ForEach(s => context.RoomLocations.AddOrUpdate(p => p.LocationId, s));
+            context.SaveChanges();
+
+            var Room = new List<Room>
+            {
+                new Room { RoomId = 1,   RoomName = "Academy"},
+                new Room { RoomId = 2,   RoomName = "Room1"},
+                new Room { RoomId = 3,   RoomName = "Room2"},
+                new Room { RoomId = 4,   RoomName = "Room3"}               
+            };
+
+            Room.ForEach(s => context.Rooms.AddOrUpdate(p => p.RoomId, s));
+            context.SaveChanges();
+
             var students = new List<Student>
             {
                 new Student { FirstMidName = "Carson",   LastName = "Alexander", 
@@ -36,6 +59,28 @@ namespace UniversityBooking.Migrations
                 new Student { FirstMidName = "Nino",     LastName = "Olivetto",  
                     EnrollmentDate = DateTime.Parse("2005-09-01") }
             };
+
+            var students = new List<Student>
+            {
+                new Student { FirstMidName = "Carson",   LastName = "Alexander", 
+                    EnrollmentDate = DateTime.Parse("2010-09-01") },
+                new Student { FirstMidName = "Meredith", LastName = "Alonso",    
+                    EnrollmentDate = DateTime.Parse("2012-09-01") },
+                new Student { FirstMidName = "Arturo",   LastName = "Anand",     
+                    EnrollmentDate = DateTime.Parse("2013-09-01") },
+                new Student { FirstMidName = "Gytis",    LastName = "Barzdukas", 
+                    EnrollmentDate = DateTime.Parse("2012-09-01") },
+                new Student { FirstMidName = "Yan",      LastName = "Li",        
+                    EnrollmentDate = DateTime.Parse("2012-09-01") },
+                new Student { FirstMidName = "Peggy",    LastName = "Justice",   
+                    EnrollmentDate = DateTime.Parse("2011-09-01") },
+                new Student { FirstMidName = "Laura",    LastName = "Norman",    
+                    EnrollmentDate = DateTime.Parse("2013-09-01") },
+                new Student { FirstMidName = "Nino",     LastName = "Olivetto",  
+                    EnrollmentDate = DateTime.Parse("2005-09-01") }
+            };
+
+
 
 
             students.ForEach(s => context.Students.AddOrUpdate(p => p.LastName, s));
