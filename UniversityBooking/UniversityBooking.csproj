@@ -177,7 +177,6 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InstructorController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Controllers\RoomLocationController.cs" />
     <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="DAL\SchoolContext.cs" />
     <Compile Include="DAL\SchoolInitializer.cs" />
@@ -238,7 +237,7 @@
     <Compile Include="Models\Instructor.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\OfficeAssignment.cs" />
-    <Compile Include="Models\RoomBooking.cs" />
+    <Compile Include="Models\Room.cs" />
     <Compile Include="Models\RoomLocations.cs" />
     <Compile Include="Models\student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -340,11 +339,6 @@
     <Content Include="Views\Department\Details.cshtml" />
     <Content Include="Views\Department\Edit.cshtml" />
     <Content Include="Views\Department\Index.cshtml" />
-    <Content Include="Views\RoomLocation\Create.cshtml" />
-    <Content Include="Views\RoomLocation\Delete.cshtml" />
-    <Content Include="Views\RoomLocation\Details.cshtml" />
-    <Content Include="Views\RoomLocation\Edit.cshtml" />
-    <Content Include="Views\RoomLocation\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

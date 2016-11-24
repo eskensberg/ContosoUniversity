@@ -11,10 +11,32 @@ namespace UniversityBooking.Models
     {
         [Key]
         public int BookingId { get; set; }
-        public int RoomId { get; set; }
-        public string UserId { get; set; }
 
-        public virtual RoomBooking RoomBooking { get; set; }
-        public virtual RoomLocations RoomLocations { get; set; }
+        [Display(Name = "UserID")]
+        public int UserID { get; set; }
+
+        //[Display(Name = "Number")]
+        //public int RoomId { get; set; }
+
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd HH:MM}", ApplyFormatInEditMode = false)]
+        [Display(Name = "Start Date")]
+        public DateTime DateStamp { get; set; }
+
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd HH:MM}", ApplyFormatInEditMode = false)]
+
+        [Display(Name = "Start Date")]
+        public DateTime BookedFrom { get; set; }
+
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd HH:MM}", ApplyFormatInEditMode = false)]
+        [Display(Name = "Booked Until")]
+        public DateTime BookedUntil { get; set; }
+
+        [Display(Name = "Describe the event")]
+        public string EventDescription { get; set; }
+
+        public virtual ICollection<Room> Rooms { get; set; }
     }
 }

@@ -23,7 +23,7 @@ namespace UniversityBooking.Models
         public string FirstMidName { get; set; }
 
         [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = false)]
         [Display(Name = "Hire Date")]
         public DateTime HireDate { get; set; }
 
