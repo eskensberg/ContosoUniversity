@@ -126,15 +126,5 @@ C:\Users\eskensberg\Desktop\Online Scripts\ASP.NET MVC 5\UniversityBookingGitHub
 C:\Users\eskensberg\Desktop\Online Scripts\ASP.NET MVC 5\UniversityBookingGitHub\UniversityBooking\obj\Debug\UniversityBooking.csprojResolveAssemblyReference.cache
 C:\Users\eskensberg\Desktop\Online Scripts\ASP.NET MVC 5\UniversityBookingGitHub\UniversityBooking\obj\Debug\UniversityBooking.dll
 C:\Users\eskensberg\Desktop\Online Scripts\ASP.NET MVC 5\UniversityBookingGitHub\UniversityBooking\obj\Debug\UniversityBooking.pdb
-C:\Users\eskensberg\Desktop\Online Scripts\ASP.NET MVC 5\UniversityBookingGitHub\UniversityBooking\obj\Debug\UniversityBooking.Migrations.InitialCreate.resources
+C:\Users\eskensberg\Desktop\Online Scripts\ASP.NET MVC 5\UniversityBookingGitHub\UniversityBooking\obj\Debug\UniversityBooking.Migrations.editedbookingmodels2.resources
 C:\Users\eskensberg\Desktop\Online Scripts\ASP.NET MVC 5\UniversityBookingGitHub\UniversityBooking\obj\Debug\UniversityBooking.csproj.GenerateResource.Cache
-C:\Users\eskensberg\Desktop\Online Scripts\ASP.NET MVC 5\UniversityBookingGitHub\UniversityBooking\obj\Debug\UniversityBooking.Migrations.MaxLengthOnNames.resources
-C:\Users\eskensberg\Desktop\Online Scripts\ASP.NET MVC 5\UniversityBookingGitHub\UniversityBooking\obj\Debug\UniversityBooking.Migrations.ColumnFirstName.resources
-C:\Users\eskensberg\Desktop\Online Scripts\ASP.NET MVC 5\UniversityBookingGitHub\UniversityBooking\obj\Debug\UniversityBooking.Migrations.ComplexDataModel.resources
-C:\Users\eskensberg\Desktop\Online Scripts\ASP.NET MVC 5\UniversityBookingGitHub\UniversityBooking\obj\Debug\UniversityBooking.Migrations.DepartmentSP.resources
-C:\Users\eskensberg\Desktop\Online Scripts\ASP.NET MVC 5\UniversityBookingGitHub\UniversityBooking\obj\Debug\UniversityBooking.Migrations.RowVersion.resources
-C:\Users\eskensberg\Desktop\Online Scripts\ASP.NET MVC 5\UniversityBookingGitHub\UniversityBooking\obj\Debug\UniversityBooking.Migrations.identityrewired.resources
-C:\Users\eskensberg\Desktop\Online Scripts\ASP.NET MVC 5\UniversityBookingGitHub\UniversityBooking\obj\Debug\UniversityBooking.Migrations.NewTable.resources
-C:\Users\eskensberg\Desktop\Online Scripts\ASP.NET MVC 5\UniversityBookingGitHub\UniversityBooking\obj\Debug\UniversityBooking.Migrations.edittoroomlocations.resources
-C:\Users\eskensberg\Desktop\Online Scripts\ASP.NET MVC 5\UniversityBookingGitHub\UniversityBooking\obj\Debug\UniversityBooking.Migrations.edittoroomlocations2.resources
-C:\Users\eskensberg\Desktop\Online Scripts\ASP.NET MVC 5\UniversityBookingGitHub\UniversityBooking\obj\Debug\UniversityBooking.Migrations.edittoroomlocations3.resources

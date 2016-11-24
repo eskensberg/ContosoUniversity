@@ -183,49 +183,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201611181118132_InitialCreate.cs" />
-    <Compile Include="Migrations\201611181118132_InitialCreate.Designer.cs">
-      <DependentUpon>201611181118132_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201611181246254_MaxLengthOnNames.cs" />
-    <Compile Include="Migrations\201611181246254_MaxLengthOnNames.Designer.cs">
-      <DependentUpon>201611181246254_MaxLengthOnNames.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201611181252531_ColumnFirstName.cs" />
-    <Compile Include="Migrations\201611181252531_ColumnFirstName.Designer.cs">
-      <DependentUpon>201611181252531_ColumnFirstName.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201611210834449_ComplexDataModel.cs" />
-    <Compile Include="Migrations\201611210834449_ComplexDataModel.Designer.cs">
-      <DependentUpon>201611210834449_ComplexDataModel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201611211456294_DepartmentSP.cs" />
-    <Compile Include="Migrations\201611211456294_DepartmentSP.Designer.cs">
-      <DependentUpon>201611211456294_DepartmentSP.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201611211519547_RowVersion.cs" />
-    <Compile Include="Migrations\201611211519547_RowVersion.Designer.cs">
-      <DependentUpon>201611211519547_RowVersion.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201611231037208_identityrewired.cs" />
-    <Compile Include="Migrations\201611231037208_identityrewired.Designer.cs">
-      <DependentUpon>201611231037208_identityrewired.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201611231748068_NewTable.cs" />
-    <Compile Include="Migrations\201611231748068_NewTable.Designer.cs">
-      <DependentUpon>201611231748068_NewTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201611241142534_edit-to-room-locations.cs" />
-    <Compile Include="Migrations\201611241142534_edit-to-room-locations.Designer.cs">
-      <DependentUpon>201611241142534_edit-to-room-locations.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201611241149052_edit-to-room-locations-2.cs" />
-    <Compile Include="Migrations\201611241149052_edit-to-room-locations-2.Designer.cs">
-      <DependentUpon>201611241149052_edit-to-room-locations-2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201611241152170_edit-to-room-locations-3.cs" />
-    <Compile Include="Migrations\201611241152170_edit-to-room-locations-3.Designer.cs">
-      <DependentUpon>201611241152170_edit-to-room-locations-3.cs</DependentUpon>
+    <Compile Include="Migrations\201611241554386_edited-booking-models-2.cs" />
+    <Compile Include="Migrations\201611241554386_edited-booking-models-2.Designer.cs">
+      <DependentUpon>201611241554386_edited-booking-models-2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -348,38 +308,8 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201611181118132_InitialCreate.resx">
-      <DependentUpon>201611181118132_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201611181246254_MaxLengthOnNames.resx">
-      <DependentUpon>201611181246254_MaxLengthOnNames.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201611181252531_ColumnFirstName.resx">
-      <DependentUpon>201611181252531_ColumnFirstName.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201611210834449_ComplexDataModel.resx">
-      <DependentUpon>201611210834449_ComplexDataModel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201611211456294_DepartmentSP.resx">
-      <DependentUpon>201611211456294_DepartmentSP.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201611211519547_RowVersion.resx">
-      <DependentUpon>201611211519547_RowVersion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201611231037208_identityrewired.resx">
-      <DependentUpon>201611231037208_identityrewired.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201611231748068_NewTable.resx">
-      <DependentUpon>201611231748068_NewTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201611241142534_edit-to-room-locations.resx">
-      <DependentUpon>201611241142534_edit-to-room-locations.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201611241149052_edit-to-room-locations-2.resx">
-      <DependentUpon>201611241149052_edit-to-room-locations-2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201611241152170_edit-to-room-locations-3.resx">
-      <DependentUpon>201611241152170_edit-to-room-locations-3.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201611241554386_edited-booking-models-2.resx">
+      <DependentUpon>201611241554386_edited-booking-models-2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
