@@ -11,7 +11,10 @@ namespace UniversityBooking.Models
         [Key]
         public int RoomId { get; set; }
         public string Title { get; set; }
-        public int Credits { get; set; }
+        //Has TV? HDMI?
+        //List of games 
+        // Couches?
+        // 1 to many relationship with things in the room
 
         public virtual ICollection<BookingRecord> BookingRecords { get; set; }
     }
