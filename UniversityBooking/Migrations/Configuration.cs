@@ -40,25 +40,42 @@ namespace UniversityBooking.Migrations
             Room.ForEach(s => context.Rooms.AddOrUpdate(p => p.RoomId, s));
             context.SaveChanges();
 
-            var students = new List<Student>
+            var BookingRecord = new List<BookingRecord>
             {
-                new Student { FirstMidName = "Carson",   LastName = "Alexander", 
-                    EnrollmentDate = DateTime.Parse("2010-09-01") },
-                new Student { FirstMidName = "Meredith", LastName = "Alonso",    
-                    EnrollmentDate = DateTime.Parse("2012-09-01") },
-                new Student { FirstMidName = "Arturo",   LastName = "Anand",     
-                    EnrollmentDate = DateTime.Parse("2013-09-01") },
-                new Student { FirstMidName = "Gytis",    LastName = "Barzdukas", 
-                    EnrollmentDate = DateTime.Parse("2012-09-01") },
-                new Student { FirstMidName = "Yan",      LastName = "Li",        
-                    EnrollmentDate = DateTime.Parse("2012-09-01") },
-                new Student { FirstMidName = "Peggy",    LastName = "Justice",   
-                    EnrollmentDate = DateTime.Parse("2011-09-01") },
-                new Student { FirstMidName = "Laura",    LastName = "Norman",    
-                    EnrollmentDate = DateTime.Parse("2013-09-01") },
-                new Student { FirstMidName = "Nino",     LastName = "Olivetto",  
-                    EnrollmentDate = DateTime.Parse("2005-09-01") }
+                new BookingRecord { BookingId=1,
+                                    UserID = 1,   
+                                    DateStamp   = DateTime.Parse("2016-09-01 9:00:56"), 
+                                    BookedFrom  = DateTime.Parse("2016-09-21 9:30"), 
+                                    BookedUntil = DateTime.Parse("2010-09-01 11:00"), 
+                                    EventDescription = "Academy Meeting with Stuart", },
+                new BookingRecord { BookingId=2,
+                                    UserID = 1,   
+                                    DateStamp   = DateTime.Parse("2016-09-01 12:00:56"), 
+                                    BookedFrom  = DateTime.Parse("2016-09-21 12:00"), 
+                                    BookedUntil = DateTime.Parse("2010-09-01 13:45"), 
+                                    EventDescription = "EpiServer Training", },
+                new BookingRecord { BookingId=3,
+                                    UserID = 1,   
+                                    DateStamp   = DateTime.Parse("2016-09-01 15:00:56"), 
+                                    BookedFrom  = DateTime.Parse("2016-09-21 14:00"), 
+                                    BookedUntil = DateTime.Parse("2010-09-01 15:30"), 
+                                    EventDescription = "Academy Meeting with Stuart", },
+                new BookingRecord { BookingId=4,
+                                    UserID = 1,   
+                                    DateStamp   = DateTime.Parse("2016-09-01 12:00:56"), 
+                                    BookedFrom  = DateTime.Parse("2016-09-21 16:00"), 
+                                    BookedUntil = DateTime.Parse("2010-09-01 17:30"), 
+                                    EventDescription = "Setting-up for techtalks chairs and drinks", },
+                new BookingRecord { BookingId=5,
+                                    UserID = 1,   
+                                    DateStamp   = DateTime.Parse("2016-09-01 12:00:56"), 
+                                    BookedFrom  = DateTime.Parse("2016-09-21 18:00"), 
+                                    BookedUntil = DateTime.Parse("2010-09-01 21:00"), 
+                                    EventDescription = "TechTalk", },
             };
+
+            BookingRecord.ForEach(s => context.BookingRecords.AddOrUpdate(p => p.BookingId, s));
+            context.SaveChanges();
 
             var students = new List<Student>
             {

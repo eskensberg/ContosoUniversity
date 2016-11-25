@@ -25,7 +25,6 @@ namespace UniversityBooking.Models
 
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd HH:MM}", ApplyFormatInEditMode = false)]
-
         [Display(Name = "Start Date")]
         public DateTime BookedFrom { get; set; }
 
