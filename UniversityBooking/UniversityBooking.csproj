@@ -184,9 +184,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201611241635147_edited-booking-models-3.cs" />
-    <Compile Include="Migrations\201611241635147_edited-booking-models-3.Designer.cs">
-      <DependentUpon>201611241635147_edited-booking-models-3.cs</DependentUpon>
+    <Compile Include="Migrations\201611251023151_added-seed-1.cs" />
+    <Compile Include="Migrations\201611251023151_added-seed-1.Designer.cs">
+      <DependentUpon>201611251023151_added-seed-1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -314,8 +314,8 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201611241635147_edited-booking-models-3.resx">
-      <DependentUpon>201611241635147_edited-booking-models-3.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201611251023151_added-seed-1.resx">
+      <DependentUpon>201611251023151_added-seed-1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

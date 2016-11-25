@@ -74,8 +74,16 @@ namespace UniversityBooking.Migrations
                                     EventDescription = "TechTalk", },
             };
 
+
             BookingRecord.ForEach(s => context.BookingRecords.AddOrUpdate(p => p.BookingId, s));
             context.SaveChanges();
+
+            //AddOrUpdateBookingRecord(context,int bookrecord, int room);
+            AddOrUpdateBookingRecord(context, 1, 1);
+            AddOrUpdateBookingRecord(context, 2, 1);
+            AddOrUpdateBookingRecord(context, 3, 1);
+            AddOrUpdateBookingRecord(context, 4, 1);
+            AddOrUpdateBookingRecord(context, 5, 1);
 
             var students = new List<Student>
             {
@@ -276,6 +284,13 @@ namespace UniversityBooking.Migrations
             var inst = crs.Instructors.SingleOrDefault(i => i.LastName == instructorName);
             if (inst == null)
                 crs.Instructors.Add(context.Instructors.Single(i => i.LastName == instructorName));
+        }
+        void AddOrUpdateBookingRecord(SchoolContext context, int bookrecord, int room)
+        {
+            var BookingR = context.BookingRecords.SingleOrDefault(c => c.BookingId == bookrecord);
+            var RoomI = BookingR.Rooms.SingleOrDefault(i => i.RoomId == room);
+            if (RoomI == null)
+                BookingR.Rooms.Add(context.Rooms.Single(i => i.RoomId == room));
         }
     }
 }
