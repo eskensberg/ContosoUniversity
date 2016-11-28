@@ -3,7 +3,7 @@ namespace UniversityBooking.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class addedseed1 : DbMigration
+    public partial class timestamps1 : DbMigration
     {
         public override void Up()
         {

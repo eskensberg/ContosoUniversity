@@ -1,0 +1,58 @@
+﻿@model UniversityBooking.Models.BookingRecord
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>BookingRecord</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.UserID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateStamp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateStamp)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BookedFrom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BookedFrom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BookedUntil)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BookedUntil)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EventDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EventDescription)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.BookingId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

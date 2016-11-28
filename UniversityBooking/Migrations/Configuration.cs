@@ -59,7 +59,7 @@ namespace UniversityBooking.Migrations
                                     DateStamp   = DateTime.Parse("2016-09-01 15:00:56"), 
                                     BookedFrom  = DateTime.Parse("2016-09-21 14:00"), 
                                     BookedUntil = DateTime.Parse("2010-09-01 15:30"), 
-                                    EventDescription = "Academy Meeting with Stuart", },
+                                    EventDescription = "Academy Presentation", },
                 new BookingRecord { BookingId=4,
                                     UserID = 1,   
                                     DateStamp   = DateTime.Parse("2016-09-01 12:00:56"), 

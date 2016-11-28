@@ -25,7 +25,32 @@
         <dd>
             @Html.DisplayFor(model => model.RoomName)
         </dd>
-
+        <dt>
+            @Html.DisplayNameFor(model => model.BookingRecords)
+        </dt>
+        <dd>
+            <table class="table">
+                <tr>
+                    <th>BookingID</th>
+                    <th>Booked By</th>
+                    <th>TimeStamp</th>
+                    <th>Booked From</th>
+                    <th>Until</th>
+                    <th>Description</th>
+                </tr>
+                @foreach (var item in Model.BookingRecords)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => item.BookingId)</td>
+                        <td>@Html.DisplayFor(modelItem => item.UserID)</td>
+                        <td>@Html.DisplayFor(modelItem => item.DateStamp)</td>
+                        <td>@Html.DisplayFor(modelItem => item.BookedFrom)</td>
+                        <td>@Html.DisplayFor(modelItem => item.BookedUntil)</td>
+                        <td>@Html.DisplayFor(modelItem => item.EventDescription)</td>
+                    </tr>
+                }
+            </table>
+        </dd>
     </dl>
 </div>
 <p>

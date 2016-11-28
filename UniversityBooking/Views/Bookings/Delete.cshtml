@@ -1,0 +1,64 @@
+﻿@model UniversityBooking.Models.BookingRecord
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>BookingRecord</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.UserID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateStamp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateStamp)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BookedFrom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BookedFrom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BookedUntil)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BookedUntil)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EventDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EventDescription)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

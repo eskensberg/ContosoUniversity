@@ -126,5 +126,5 @@ C:\Users\eskensberg\Desktop\Online Scripts\ASP.NET MVC 5\UniversityBookingGitHub
 C:\Users\eskensberg\Desktop\Online Scripts\ASP.NET MVC 5\UniversityBookingGitHub\UniversityBooking\obj\Debug\UniversityBooking.csprojResolveAssemblyReference.cache
 C:\Users\eskensberg\Desktop\Online Scripts\ASP.NET MVC 5\UniversityBookingGitHub\UniversityBooking\obj\Debug\UniversityBooking.dll
 C:\Users\eskensberg\Desktop\Online Scripts\ASP.NET MVC 5\UniversityBookingGitHub\UniversityBooking\obj\Debug\UniversityBooking.pdb
-C:\Users\eskensberg\Desktop\Online Scripts\ASP.NET MVC 5\UniversityBookingGitHub\UniversityBooking\obj\Debug\UniversityBooking.Migrations.addedseed1.resources
+C:\Users\eskensberg\Desktop\Online Scripts\ASP.NET MVC 5\UniversityBookingGitHub\UniversityBooking\obj\Debug\UniversityBooking.Migrations.timestamps1.resources
 C:\Users\eskensberg\Desktop\Online Scripts\ASP.NET MVC 5\UniversityBookingGitHub\UniversityBooking\obj\Debug\UniversityBooking.csproj.GenerateResource.Cache
