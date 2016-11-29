@@ -11,18 +11,17 @@ using UniversityBooking.Models;
 
 namespace UniversityBooking.Controllers
 {
-    public class RoomsController : Controller
+    public class RoomController : Controller
     {
         private SchoolContext db = new SchoolContext();
 
-        // GET: Rooms
+        // GET: Room
         public ActionResult Index()
         {
-            var rooms = db.Rooms.Include(r => r.RoomLocation);
-            return View(rooms.ToList());
+            return View(db.Rooms.ToList());
         }
 
-        // GET: Rooms/Details/5
+        // GET: Room/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -37,19 +36,18 @@ namespace UniversityBooking.Controllers
             return View(room);
         }
 
-        // GET: Rooms/Create
+        // GET: Room/Create
         public ActionResult Create()
         {
-            ViewBag.RoomId = new SelectList(db.RoomLocations, "LocationId", "OfficeLocation");
             return View();
         }
 
-        // POST: Rooms/Create
+        // POST: Room/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "RoomId,RoomName")] Room room)
+        public ActionResult Create([Bind(Include = "RoomId,RoomName,Location")] Room room)
         {
             if (ModelState.IsValid)
             {
@@ -58,11 +56,10 @@ namespace UniversityBooking.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.RoomId = new SelectList(db.RoomLocations, "LocationId", "OfficeLocation", room.RoomId);
             return View(room);
         }
 
-        // GET: Rooms/Edit/5
+        // GET: Room/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -74,16 +71,15 @@ namespace UniversityBooking.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.RoomId = new SelectList(db.RoomLocations, "LocationId", "OfficeLocation", room.RoomId);
             return View(room);
         }
 
-        // POST: Rooms/Edit/5
+        // POST: Room/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "RoomId,RoomName")] Room room)
+        public ActionResult Edit([Bind(Include = "RoomId,RoomName,Location")] Room room)
         {
             if (ModelState.IsValid)
             {
@@ -91,11 +87,10 @@ namespace UniversityBooking.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.RoomId = new SelectList(db.RoomLocations, "LocationId", "OfficeLocation", room.RoomId);
             return View(room);
         }
 
-        // GET: Rooms/Delete/5
+        // GET: Room/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -110,7 +105,7 @@ namespace UniversityBooking.Controllers
             return View(room);
         }
 
-        // POST: Rooms/Delete/5
+        // POST: Room/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)

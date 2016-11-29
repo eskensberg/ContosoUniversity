@@ -13,7 +13,7 @@ namespace UniversityBooking.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201611281120347_timestamps-1"; }
+            get { return "201611291103199_timestamps-1"; }
         }
         
         string IMigrationMetadata.Source

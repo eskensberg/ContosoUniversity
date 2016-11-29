@@ -26,20 +26,9 @@ namespace UniversityBooking.Migrations
                     {
                         RoomId = c.Int(nullable: false, identity: true),
                         RoomName = c.String(),
-                        RoomLocation_LocationId = c.Int(),
+                        Location = c.String(),
                     })
-                .PrimaryKey(t => t.RoomId)
-                .ForeignKey("dbo.RoomLocations", t => t.RoomLocation_LocationId)
-                .Index(t => t.RoomLocation_LocationId);
-            
-            CreateTable(
-                "dbo.RoomLocations",
-                c => new
-                    {
-                        LocationId = c.Int(nullable: false, identity: true),
-                        OfficeLocation = c.String(maxLength: 50),
-                    })
-                .PrimaryKey(t => t.LocationId);
+                .PrimaryKey(t => t.RoomId);
             
             CreateTable(
                 "dbo.Courses",
@@ -154,7 +143,6 @@ namespace UniversityBooking.Migrations
             DropForeignKey("dbo.OfficeAssignments", "InstructorID", "dbo.Instructors");
             DropForeignKey("dbo.InstructorCourses", "Course_CourseID", "dbo.Courses");
             DropForeignKey("dbo.InstructorCourses", "Instructor_ID", "dbo.Instructors");
-            DropForeignKey("dbo.Rooms", "RoomLocation_LocationId", "dbo.RoomLocations");
             DropForeignKey("dbo.RoomBookingRecords", "BookingRecord_BookingId", "dbo.BookingRecords");
             DropForeignKey("dbo.RoomBookingRecords", "Room_RoomId", "dbo.Rooms");
             DropIndex("dbo.InstructorCourses", new[] { "Course_CourseID" });
@@ -166,7 +154,6 @@ namespace UniversityBooking.Migrations
             DropIndex("dbo.OfficeAssignments", new[] { "InstructorID" });
             DropIndex("dbo.Departments", new[] { "InstructorID" });
             DropIndex("dbo.Courses", new[] { "DepartmentID" });
-            DropIndex("dbo.Rooms", new[] { "RoomLocation_LocationId" });
             DropTable("dbo.InstructorCourses");
             DropTable("dbo.RoomBookingRecords");
             DropTable("dbo.Students");
@@ -175,7 +162,6 @@ namespace UniversityBooking.Migrations
             DropTable("dbo.Instructors");
             DropTable("dbo.Departments");
             DropTable("dbo.Courses");
-            DropTable("dbo.RoomLocations");
             DropTable("dbo.Rooms");
             DropTable("dbo.BookingRecords");
         }

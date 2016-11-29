@@ -17,24 +17,29 @@ namespace UniversityBooking.Migrations
 
         protected override void Seed(SchoolContext context)
         {
-            var RoomLocations = new List<RoomLocations>
-            {
-                new RoomLocations { LocationId = 1,   OfficeLocation = "Manchester"},
-                new RoomLocations { LocationId = 2,   OfficeLocation = "Liverpool"},
-                new RoomLocations { LocationId = 3,   OfficeLocation = "London"},
-                new RoomLocations { LocationId = 3,   OfficeLocation = "Chicago"},
-                new RoomLocations { LocationId = 5,   OfficeLocation = "Dubai"}
-            };
+            //var RoomLocations = new List<RoomLocations>
+            //{
+            //    new RoomLocations { LocationId = 1,   OfficeLocation = "Manchester"},
+            //    new RoomLocations { LocationId = 2,   OfficeLocation = "Liverpool"},
+            //    new RoomLocations { LocationId = 3,   OfficeLocation = "London"},
+            //    new RoomLocations { LocationId = 3,   OfficeLocation = "Chicago"},
+            //    new RoomLocations { LocationId = 5,   OfficeLocation = "Dubai"}
+            //};
 
-            RoomLocations.ForEach(s => context.RoomLocations.AddOrUpdate(p => p.LocationId, s));
-            context.SaveChanges();
+            //RoomLocations.ForEach(s => context.RoomLocations.AddOrUpdate(p => p.LocationId, s));
+            //context.SaveChanges();
 
             var Room = new List<Room>
             {
-                new Room { RoomId = 1,   RoomName = "Academy", RoomLocation = "1"},
-                new Room { RoomId = 2,   RoomName = "Room1"},
-                new Room { RoomId = 3,   RoomName = "Room2"},
-                new Room { RoomId = 4,   RoomName = "Room3"}               
+                new Room { RoomId = 1,   RoomName = "Academy" , Location = "Manchester"},
+                new Room { RoomId = 2,   RoomName = "Room1" ,   Location = "Manchester"},
+                new Room { RoomId = 3,   RoomName = "Room2" ,   Location = "Manchester"},
+                new Room { RoomId = 4,   RoomName = "D1",       Location = "Dubai"},    
+                new Room { RoomId = 5,   RoomName = "D2",       Location = "Dubai"},    
+                new Room { RoomId = 6,   RoomName = "Room3",    Location = "Liverpool"},    
+                new Room { RoomId = 7,   RoomName = "Room3",    Location = "Liverpool"},    
+                new Room { RoomId = 8,   RoomName = "Room3",    Location = "London"},    
+                new Room { RoomId = 9,   RoomName = "Room3",    Location = "London"},    
             };
 
             Room.ForEach(s => context.Rooms.AddOrUpdate(p => p.RoomId, s));
@@ -72,6 +77,48 @@ namespace UniversityBooking.Migrations
                                     BookedFrom  = DateTime.Parse("2016-09-21 18:00"), 
                                     BookedUntil = DateTime.Parse("2010-09-01 21:00"), 
                                     EventDescription = "TechTalk", },
+                new BookingRecord { BookingId=6,
+                                    UserID = 1,   
+                                    DateStamp   = DateTime.Parse("2016-09-01 12:00:56"), 
+                                    BookedFrom  = DateTime.Parse("2016-09-21 18:00"), 
+                                    BookedUntil = DateTime.Parse("2010-09-01 21:00"), 
+                                    EventDescription = "Dubai Meeting 1", },
+                new BookingRecord { BookingId=7,
+                                    UserID = 1,   
+                                    DateStamp   = DateTime.Parse("2016-09-01 12:00:56"), 
+                                    BookedFrom  = DateTime.Parse("2016-09-21 18:00"), 
+                                    BookedUntil = DateTime.Parse("2010-09-01 21:00"), 
+                                    EventDescription = "Dubai Meeting 2", },
+                new BookingRecord { BookingId=8,
+                                    UserID = 1,   
+                                    DateStamp   = DateTime.Parse("2016-09-01 12:00:56"), 
+                                    BookedFrom  = DateTime.Parse("2016-09-21 18:00"), 
+                                    BookedUntil = DateTime.Parse("2010-09-01 21:00"), 
+                                    EventDescription = "Liverppool Meeting 1", },
+                new BookingRecord { BookingId=9,
+                                    UserID = 1,   
+                                    DateStamp   = DateTime.Parse("2016-09-01 12:00:56"), 
+                                    BookedFrom  = DateTime.Parse("2016-09-21 18:00"), 
+                                    BookedUntil = DateTime.Parse("2010-09-01 21:00"), 
+                                    EventDescription = "Liverppool Meeting 2", },
+                new BookingRecord { BookingId=10,
+                                    UserID = 1,   
+                                    DateStamp   = DateTime.Parse("2016-09-01 12:00:56"), 
+                                    BookedFrom  = DateTime.Parse("2016-09-21 18:00"), 
+                                    BookedUntil = DateTime.Parse("2010-09-01 21:00"), 
+                                    EventDescription = "London Meeting 1", },
+                new BookingRecord { BookingId=11,
+                                    UserID = 1,   
+                                    DateStamp   = DateTime.Parse("2016-09-01 12:00:56"), 
+                                    BookedFrom  = DateTime.Parse("2016-09-21 18:00"), 
+                                    BookedUntil = DateTime.Parse("2010-09-01 21:00"), 
+                                    EventDescription = "London Meeting 2", },
+                new BookingRecord { BookingId=12,
+                                    UserID = 1,   
+                                    DateStamp   = DateTime.Parse("2016-09-01 12:00:56"), 
+                                    BookedFrom  = DateTime.Parse("2016-09-21 18:00"), 
+                                    BookedUntil = DateTime.Parse("2010-09-01 21:00"), 
+                                    EventDescription = "London Meeting 3", },
             };
 
 
@@ -84,6 +131,13 @@ namespace UniversityBooking.Migrations
             AddOrUpdateBookingRecord(context, 3, 1);
             AddOrUpdateBookingRecord(context, 4, 1);
             AddOrUpdateBookingRecord(context, 5, 1);
+            AddOrUpdateBookingRecord(context, 6, 4);
+            AddOrUpdateBookingRecord(context, 7, 5);
+            AddOrUpdateBookingRecord(context, 8, 6);
+            AddOrUpdateBookingRecord(context, 9, 7);
+            AddOrUpdateBookingRecord(context, 10, 8);
+            AddOrUpdateBookingRecord(context, 11, 9);
+            AddOrUpdateBookingRecord(context, 12, 9);
 
             //var RoomLocation = new List<RoomLocations>
             //{

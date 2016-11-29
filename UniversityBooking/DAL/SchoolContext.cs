@@ -11,7 +11,7 @@ namespace UniversityBooking.DAL
     public class SchoolContext : DbContext
     {
         public DbSet<BookingRecord> BookingRecords { get; set; }
-        public DbSet<RoomLocations> RoomLocations { get; set; }
+        //public DbSet<RoomLocations> RoomLocations { get; set; }
         public DbSet<Room> Rooms { get; set; }
         public DbSet<Course> Courses { get; set; }
         public DbSet<Department> Departments { get; set; }
