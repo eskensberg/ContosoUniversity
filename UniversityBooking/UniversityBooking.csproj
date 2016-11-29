@@ -177,6 +177,7 @@
     <Compile Include="Controllers\DepartmentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InstructorController.cs" />
+    <Compile Include="Controllers\LinqController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\RoomsController.cs" />
     <Compile Include="Controllers\StudentController.cs" />
@@ -312,6 +313,12 @@
     <Content Include="Views\Bookings\Details.cshtml" />
     <Content Include="Views\Bookings\Edit.cshtml" />
     <Content Include="Views\Bookings\Index.cshtml" />
+    <Content Include="Views\Linq\Create.cshtml" />
+    <Content Include="Views\Linq\Delete.cshtml" />
+    <Content Include="Views\Linq\Details.cshtml" />
+    <Content Include="Views\Linq\Edit.cshtml" />
+    <Content Include="Views\Linq\Index.cshtml" />
+    <Content Include="Views\Linq\Chars.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

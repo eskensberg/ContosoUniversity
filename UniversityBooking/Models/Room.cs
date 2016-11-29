@@ -12,6 +12,7 @@ namespace UniversityBooking.Models
         public int RoomId { get; set; }
 
         public string RoomName { get; set; }
+        public int LocationId { get; set; }
 
         //Has TV? HDMI?
         //List of games 

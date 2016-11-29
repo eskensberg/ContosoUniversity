@@ -31,7 +31,7 @@ namespace UniversityBooking.Migrations
 
             var Room = new List<Room>
             {
-                new Room { RoomId = 1,   RoomName = "Academy"},
+                new Room { RoomId = 1,   RoomName = "Academy", RoomLocation = "1"},
                 new Room { RoomId = 2,   RoomName = "Room1"},
                 new Room { RoomId = 3,   RoomName = "Room2"},
                 new Room { RoomId = 4,   RoomName = "Room3"}               
@@ -84,6 +84,16 @@ namespace UniversityBooking.Migrations
             AddOrUpdateBookingRecord(context, 3, 1);
             AddOrUpdateBookingRecord(context, 4, 1);
             AddOrUpdateBookingRecord(context, 5, 1);
+
+            //var RoomLocation = new List<RoomLocations>
+            //{
+            //    new RoomLocations { 
+            //        Rooms = lcoationID.Single( i => i.RoomID == "Fakhouri").ID, 
+            //        Location = "Smith 17" },
+            //};
+            //officeAssignments.ForEach(s => context.OfficeAssignments.AddOrUpdate(p => p.InstructorID, s));
+            //context.SaveChanges();
+
 
             var students = new List<Student>
             {

@@ -10,6 +10,7 @@ namespace UniversityBooking.Models
     public class RoomLocations
     {
         //[ForeignKey("Room")]
+        //[ForeignKey("location")]
         [Key]
         public int LocationId { get; set; }
 
@@ -18,7 +19,6 @@ namespace UniversityBooking.Models
         public string OfficeLocation { get; set; }
    
         public virtual ICollection<Room> Rooms { get; set; }
-
 
     }
 }
